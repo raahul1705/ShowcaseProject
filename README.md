@@ -1,2 +1,0 @@
-# ShowcaseProject
-Project for something
