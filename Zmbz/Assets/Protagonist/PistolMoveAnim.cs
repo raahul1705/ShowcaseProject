@@ -21,9 +21,11 @@ public class PistolMoveAnim : MonoBehaviour {
 			Camera.main.fieldOfView = 60;
 		}
 
-		if (Input.GetMouseButtonDown(0) && 
-			(!anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootRelaxed") || !anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootAim"))) {
-			anim.SetBool ("Shoot", true);
+		if (Input.GetMouseButtonDown(0)) { 
+			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootRelaxed") 
+				|| !anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootAim")) {
+				anim.SetBool ("Shoot", true);
+			}
 			mFlash.Play ();
 
 		} else {
