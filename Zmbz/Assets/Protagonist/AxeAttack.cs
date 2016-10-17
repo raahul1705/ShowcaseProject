@@ -3,11 +3,10 @@ using System.Collections;
 
 public class AxeAttack : MonoBehaviour {
 	GameObject axeM;
-	Animator axeAnim;
+	[SerializeField]Animator axeAnim;
 	// Use this for initialization
 	void Start () {
-		axeM = GameObject.FindGameObjectWithTag ("playerAxe");
-		axeAnim = axeM.GetComponent<Animator> ();
+		
 	}
 	
 	// Update is called once per frame
