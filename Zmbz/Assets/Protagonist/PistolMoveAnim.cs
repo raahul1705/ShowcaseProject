@@ -10,7 +10,7 @@ public class PistolMoveAnim : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void LateUpdate () {
+	void Update () {
 		
 		if (Input.GetButton ("Fire2") && !anim.GetCurrentAnimatorStateInfo (0).IsName ("Reload")) {
 			anim.SetBool ("Aiming", true);
@@ -21,11 +21,13 @@ public class PistolMoveAnim : MonoBehaviour {
 			Camera.main.fieldOfView = 60;
 		}
 
-		if (Input.GetMouseButtonDown(0)) { 
+		if (Input.GetMouseButtonDown(0)) {
+			wait ();
 			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootRelaxed") 
 				|| !anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootAim")) {
 				anim.SetBool ("Shoot", true);
 				mFlash.Play ();
+
 			}
 
 
@@ -43,7 +45,9 @@ public class PistolMoveAnim : MonoBehaviour {
 		else {
 			anim.SetBool ("Reload", false);
 		}
+	}
 
-
+	IEnumerator wait() {
+		yield return new WaitForSeconds (5);
 	}
 }
