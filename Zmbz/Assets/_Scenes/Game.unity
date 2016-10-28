@@ -605,7 +605,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 647727093}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 2
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -665,6 +665,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae43a4c0013b444897049a60d1f412a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &649654606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 649654603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df0358c988a44bc08c6174533271ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axeAnim: {fileID: 0}
 --- !u!4 &674423871 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495726, guid: 226017fa027f44d7295aad7b6878c816, type: 2}
@@ -948,6 +960,10 @@ Prefab:
       propertyPath: m_Name
       value: zomb (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100110, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
   m_IsPrefabParent: 0
@@ -997,6 +1013,10 @@ Prefab:
     - target: {fileID: 100110, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
       propertyPath: m_TagString
       value: zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 100110, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
@@ -1308,18 +1328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mFlash: {fileID: 698119952}
---- !u!114 &1365955544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1365955541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7df0358c988a44bc08c6174533271ee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axeAnim: {fileID: 0}
 --- !u!1 &1369580513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1897,10 @@ Prefab:
       propertyPath: m_Name
       value: zomb (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100110, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23f2ec40f2e5f4ee78f8336561061035, type: 3}
   m_IsPrefabParent: 0
@@ -1948,7 +1960,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1815084004}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 2
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2031,7 +2043,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2047326396}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 2
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120

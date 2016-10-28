@@ -25,8 +25,9 @@ public class PistolMoveAnim : MonoBehaviour {
 			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootRelaxed") 
 				|| !anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootAim")) {
 				anim.SetBool ("Shoot", true);
+				mFlash.Play ();
 			}
-			mFlash.Play ();
+
 
 		} else {
 			mFlash.Stop ();
