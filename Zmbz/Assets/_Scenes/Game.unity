@@ -354,7 +354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100080, guid: 50b74178274a141ae8ce324c89a6b0b4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400080, guid: 50b74178274a141ae8ce324c89a6b0b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -833,7 +833,7 @@ TerrainCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 996004000}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 034c9e949d94e41888d5eeae20a128d0, type: 2}
   m_EnableTreeColliders: 1
@@ -1215,11 +1215,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.41
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.43
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1243,19 +1243,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5764067
+      value: 0.5764068
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.18587577
+      value: 0.18587579
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.27060428
+      value: -0.2706043
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7483173
+      value: 0.74831736
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_Controller
@@ -1271,7 +1271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100098, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: a0d2153ca8c0243cbaf4974135cee3d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

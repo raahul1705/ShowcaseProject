@@ -10,7 +10,7 @@ public class PistolMoveAnim : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		
 		if (Input.GetButton ("Fire2") && !anim.GetCurrentAnimatorStateInfo (0).IsName ("Reload")) {
 			anim.SetBool ("Aiming", true);
