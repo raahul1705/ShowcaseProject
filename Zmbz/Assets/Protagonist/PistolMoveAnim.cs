@@ -4,8 +4,10 @@ using System.Collections;
 public class PistolMoveAnim : MonoBehaviour {
 	Animator anim;
 	[SerializeField]ParticleSystem mFlash;
+	bool shot = false;
 	// Use this for initialization
 	void Start () {
+		Debug.Log (Time.timeScale);
 		anim = GetComponent<Animator> ();
 	}
 	
@@ -21,15 +23,23 @@ public class PistolMoveAnim : MonoBehaviour {
 			Camera.main.fieldOfView = 60;
 		}
 
-		if (Input.GetMouseButtonDown(0)) { 
+		if (Input.GetMouseButtonDown(0)) {
+			
 			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootRelaxed") 
 				|| !anim.GetCurrentAnimatorStateInfo (0).IsName ("ShootAim")) {
-				anim.SetBool ("Shoot", true);
+
+
+				if (shot == false) {
+					anim.SetBool ("Shoot", true);
+					mFlash.Play ();
+					shot = true;
+					StartCoroutine (shoot ());
+				} 
 			}
-			mFlash.Play ();
+
 
 		} else {
-			mFlash.Stop ();
+			//mFlash.Stop ();
 			anim.SetBool ("Shoot", false);
 		}
 
@@ -42,7 +52,11 @@ public class PistolMoveAnim : MonoBehaviour {
 		else {
 			anim.SetBool ("Reload", false);
 		}
+	}
 
-
+	IEnumerator shoot() {
+		Debug.Log ("RUN");
+		yield return new WaitForSeconds (0.3f);
+		shot = false;
 	}
 }
